@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarberPro — Sharp Looks, No Waiting</title>
+    <meta
+      name="description"
+      content="BarberPro barbershop — book a chair, see prices, find opening hours."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./barber.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <a href="#" class="logo">BARBER<span>PRO</span></a>
+        <ul class="nav__links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#book">Hours</a></li>
+        </ul>
+        <a href="#book" class="navbtn">Book a chair</a>
+      </div>
+    </header>
+    <div class="stripe"></div>
+
+    <section class="hero">
+      <div class="hero__grid">
+        <div>
+          <div class="kicker">Walkden · Est. local barbershop</div>
+          <h1>SHARP LOOKS.<br /><span>NO WAITING.</span></h1>
+          <p>
+            Skin fades, beard sculpting and classic cuts — book a chair online
+            and skip the queue.
+          </p>
+          <div class="hero__actions">
+            <a href="#book" class="btn btn--brass">Book a chair</a>
+            <a href="#services" class="btn btn--outline">See prices</a>
+          </div>
+        </div>
+        <div class="status">
+          <div class="status__row">
+            <span class="dot"></span> Live chair status
+          </div>
+          <div class="status__list">
+            <div class="status__item">
+              <span>Chair 1 — Marcus</span
+              ><span class="status__tag">Open now</span>
+            </div>
+            <div class="status__item">
+              <span>Chair 2 — Dee</span
+              ><span class="status__tag busy">Next slot 3:30</span>
+            </div>
+            <div class="status__item">
+              <span>Chair 3 — Sami</span
+              ><span class="status__tag">Open now</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="wrap">
+        <h2>Price list</h2>
+        <p class="section__lead">
+          Every cut finishes with a hot towel and a clean line-up.
+        </p>
+        <div class="pricelist">
+          <div class="pricegroup">
+            <h3>Cuts</h3>
+            <div class="priceline">
+              <span class="name">Skin fade</span><span class="fill"></span
+              ><span class="price">£18</span>
+            </div>
+            <div class="priceline">
+              <span class="name">Classic scissor cut</span
+              ><span class="fill"></span><span class="price">£16</span>
+            </div>
+            <div class="priceline">
+              <span class="name">Kids cut (under 12)</span
+              ><span class="fill"></span><span class="price">£12</span>
+            </div>
+            <div class="priceline">
+              <span class="name">Cut &amp; beard combo</span
+              ><span class="fill"></span><span class="price">£24</span>
+            </div>
+          </div>
+          <div class="pricegroup">
+            <h3>Grooming</h3>
+            <div class="priceline">
+              <span class="name">Beard sculpt &amp; hot towel</span
+              ><span class="fill"></span><span class="price">£10</span>
+            </div>
+            <div class="priceline">
+              <span class="name">Line-up only</span><span class="fill"></span
+              ><span class="price">£7</span>
+            </div>
+            <div class="priceline">
+              <span class="name">Hair wash &amp; style</span
+              ><span class="fill"></span><span class="price">£8</span>
+            </div>
+            <div class="priceline">
+              <span class="name">Full package</span><span class="fill"></span
+              ><span class="price">£30</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="wrap">
+        <h2>Recent work</h2>
+        <p class="section__lead">
+          Swap these placeholders for real cut photos once you've got them.
+        </p>
+        <div class="gallery__grid">
+          <div class="gallery__cell">Add photo 1</div>
+          <div class="gallery__cell">Add photo 2</div>
+          <div class="gallery__cell">Add photo 3</div>
+          <div class="gallery__cell">Add photo 4</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="book" id="book">
+      <div class="wrap book__grid">
+        <div>
+          <h2>Book a chair</h2>
+          <p class="section__lead">Fill this in and we'll confirm your slot.</p>
+          <form id="bookForm" style="margin-top: 32px">
+            <div class="field">
+              <label for="name">Name</label
+              ><input id="name" required placeholder="Your name" />
+            </div>
+            <div class="field">
+              <label for="service">Service</label>
+              <select id="service">
+                <option>Skin fade — £18</option>
+                <option>Classic scissor cut — £16</option>
+                <option>Cut &amp; beard combo — £24</option>
+                <option>Full package — £30</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="time">Preferred time</label
+              ><input id="time" type="time" required />
+            </div>
+            <button
+              type="submit"
+              class="btn btn--brass"
+              style="
+                width: 100%;
+                justify-content: center;
+                border: none;
+                cursor: pointer;
+              "
+            >
+              Confirm booking
+            </button>
+            <p class="book__note">
+              This form is a front-end demo — no booking is actually sent yet.
+            </p>
+          </form>
+        </div>
+        <div>
+          <h2 style="font-size: 28px">Opening hours</h2>
+          <ul class="hours" style="margin-top: 24px">
+            <li><span>Mon – Fri</span><b>9:00 – 19:00</b></li>
+            <li><span>Saturday</span><b>9:00 – 17:00</b></li>
+            <li><span>Sunday</span><b>Closed</b></li>
+          </ul>
+          <div class="addr">
+            BarberPro<br />
+            123 High Street, Walkden, Salford<br />
+            Walk-ins welcome when chairs are free.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> BarberPro. Demo site built by Idowu Ayuba.
+    </footer>
+    <div id="toast">Booking request sent — demo only</div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      const form = document.getElementById("bookForm");
+      const toast = document.getElementById("toast");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        toast.classList.add("show");
+        setTimeout(() => toast.classList.remove("show"), 2600);
+        form.reset();
+      });
+    </script>
+  </body>
+</html>
